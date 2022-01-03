@@ -1,5 +1,6 @@
 import React from "react";
 import UserServices from "../services/UserServices";
+import "./UserComponent.css";
 
 class UserComponent extends React.Component {
   constructor(props) {
@@ -17,11 +18,11 @@ class UserComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="container">
         <h1 className="text-center ">Users List</h1>
-        <table className="table table-strriped">
+        <table>
           <thead>
-            <tr>
+            <tr class="head">
               <td>User Id</td>
               <td>User First Name</td>
               <td>User Last Name</td>
@@ -34,7 +35,7 @@ class UserComponent extends React.Component {
                 <td>{user.id}</td>
                 <td>{user.firstName}</td>
                 <td>{user.lastName}</td>
-                <td>{user.emailId}</td>
+                <td>{user.email}</td>
               </tr>
             ))}
           </tbody>

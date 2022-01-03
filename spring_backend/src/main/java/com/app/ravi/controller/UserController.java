@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.ravi.model.User;
 import com.app.ravi.repository.UserRepository;
 
-@CrossOrigin(origin ="http://localhost:3000/")
+@CrossOrigin(origins ="http://localhost:3000/")
 @RestController
 @RequestMapping("api/")
 public class UserController {
